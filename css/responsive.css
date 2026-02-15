@@ -1,0 +1,93 @@
+/* ========================================
+   DISEÑO RESPONSIVE
+   ======================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .header {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: var(--font-size-md);
+    }
+
+    .container {
+        margin: var(--spacing-md) auto;
+        padding: 0 var(--spacing-sm);
+    }
+
+    .section-title {
+        font-size: var(--font-size-md);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: var(--spacing-md);
+    }
+
+    .timeline-marker {
+        left: -23px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .header {
+        background: rgb(234, 145, 145);
+
+    }
+
+    .header-content {
+        gap: var(--spacing-md);
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: var(--font-size-sm);
+    }
+
+    .photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .sidebar .section,
+    .main-content .section {
+        padding: var(--spacing-sm);
+    }
+}
