@@ -1,0 +1,58 @@
+/* ========================================
+   ENCABEZADO
+   ======================================== */
+
+.header {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: var(--spacing-xs);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.profile-photo {
+    flex-shrink: 0;
+}
+
+.photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    object-fit: cover;
+    box-shadow: var(--shadow-hover);
+}
+
+.header-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-xs);
+    opacity: 0.95;
+}
+
+.subtitle {
+    font-size: var(--font-size-sm);
+    opacity: 0.85;
+    font-style: italic;
+}

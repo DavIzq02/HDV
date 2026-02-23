@@ -1,0 +1,377 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── NAV ── */
+nav {
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 44px;
+  overflow-x: auto;
+}
+
+nav::-webkit-scrollbar { display: none; }
+
+nav a {
+  color: rgba(255,255,255,.88);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0 14px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  transition: border-color .2s, color .2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+nav a.active { font-weight: 600; }
+
+nav[data-toggle="collapse"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.15s linear; /* Cambio de duración y función de temporización */
+}
+
+/* ── MAIN WRAPPER ── */
+.page-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+/* ── SECTION TITLE ── */
+section h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--text);
+  letter-spacing: -.02em;
+}
+
+/* ── SEARCH BAR ── */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.search-wrap {
+  position: relative;
+  width: 240px;
+}
+
+.search-wrap input {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 36px 9px 14px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  background: #fff;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.search-img {
+  width: 16px;
+  height: 16px;
+  opacity: .6;
+  margin: 2px;
+}
+.search-wrap input:focus {
+  border-color: var(--blue-mid);
+  box-shadow: 0 0 0 3px rgba(34,87,184,.12);
+}
+
+.search-wrap button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.search-options-link {
+  color: var(--blue-mid);
+  font-size: 13.5px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-options-link:hover { text-decoration: underline; }
+
+/* ── GRID ── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 680px) {
+  .cards-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) and (min-width: 681px) {
+  .cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── CARD ── */
+article.student-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 28px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform .22s, box-shadow .22s;
+  animation: fadeUp .4s ease both;
+}
+
+article.student-card:nth-child(2) { animation-delay: .06s; }
+article.student-card:nth-child(3) { animation-delay: .12s; }
+article.student-card:nth-child(4) { animation-delay: .18s; }
+article.student-card:nth-child(5) { animation-delay: .22s; }
+article.student-card:nth-child(6) { animation-delay: .26s; }
+article.student-card:nth-child(7) { animation-delay: .30s; }
+article.student-card:nth-child(8) { animation-delay: .34s; }
+article.student-card:nth-child(9) { animation-delay: .38s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+article.student-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(33,87,184,.16);
+}
+
+/* ── AVATAR ── */
+.avatar-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--border);
+  background: #e8edf5;
+}
+
+.avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--blue-mid);
+  background: linear-gradient(135deg,#dbe8ff,#c5d8fa);
+}
+
+/* ── STUDENT INFO ── */
+.student-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+.student-role {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ── BUTTON VER ── */
+.btn-ver {
+  background: var(--button-color);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: background .18s, transform .12s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-ver:hover {
+  background: var(--accent);
+  transform: scale(1.03);
+}
+
+/* ── SOCIAL ICONS ── */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.social-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .15s, opacity .15s;
+}
+
+.social-btn:hover {
+  transform: scale(1.15);
+  opacity: .88;
+}
+
+.social-btn.li{width: 15px; height: 15px; background: var(--blue-mid); border-radius: 100%}
+.social-btn.tw {width: 20px; height: 20px; background: var(--white); border-radius: 50%}
+.social-btn.fb {width: 20px; height: 20px; background: var(--white); border-radius: 50%}
+
+/* ── FOOTER ── */
+footer {
+  background: rgba(255,255,255,.65);
+  color: rgba(255,255,255,.65);
+  font-size: 13px;
+  padding: 16px 24px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  border-top: 2px solid rgba(255,255,255,.12);
+}
+
+footer .btn-listo {
+  background: var(--button-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 26px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+footer .btn-listo:hover { background: var(--accent); }
+
+
+/* ── CARD AGREGAR ESTUDIANTE ── */
+article.student-card--add {
+  background: #fff;
+  border: 2px dashed var(--blue-mid);
+  box-shadow: none;
+  justify-content: center;
+  gap: 12px;
+  opacity: .85;
+  transition: opacity .2s, border-color .2s, transform .22s, box-shadow .22s;
+}
+
+/* ── Evento hover cuando pasa el mouse por encima del componente ── */
+article.student-card--add:hover {
+  opacity: 1; /*Opacidad a la card*/
+  border-color: var(--accent); /*Cambiamos color del borde*/
+  border-style: solid; /*Estilo de linea solida*/
+  box-shadow: 0 8px 30px var(--blue); /*La sombra*/
+}
+
+.add-icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e8f0ff, #c5d8fa);
+  border: 2px dashed var(--blue-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+}
+
+article.student-card--add:hover .add-icon-wrap {
+  background: linear-gradient(135deg, #d0e4ff, #a8c6f8);
+  border-style: solid;
+}
+
+.add-icon-img {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.btn-agregar {
+  background: transparent;
+  color: var(--blue-mid);
+  border: 2px solid var(--blue-mid);
+}
+
+.btn-agregar:hover {
+  background: var(--blue-mid);
+  color: #fff;
+  transform: scale(1.03);
+}
+.avatar-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 50%;
+}

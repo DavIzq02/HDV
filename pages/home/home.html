@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTAL HDV</title>
+  <style type="text/css">
+    @import url("../../css/general.css");
+    @import url("../../css/header.css");
+    @import url("../home/style/home.css");
+  </style>
+  <link rel="icon" href="../../media/img/icono.png" type="image/png">
+  <script src="./js/script.js" defer></script>
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <img src="../../media/img/unimagLogo.png" class="logo mr-1" alt="Campus virtual UM">
+    </div>
+    <div class="course-title">PROGRAMACIÓN WEB</div>
+    <div class="header-right">
+      <img src="../../media/svg/grid.svg" alt="Grid Icon" class="header-icon" title="Vista de cuadrícula" />
+      <img src="../../media/svg/mail.svg" alt="Mail Icon" class="header-icon" title="Correo" />
+      <img src="../../media/svg/mensajes.svg" alt="Message Icon" class="header-icon" title="Mensajes" />
+      <img src="../../media/svg/notification.svg" alt="Notification Icon" class="header-icon" title="Notificaciones" />
+
+      <div class="user-chip">
+        <div class="user-avatar">DI</div>
+        David Izquierdo
+      </div>
+      <img src="../../media/svg/ajustes.svg" alt="Settings Icon" class="header-icon" title="Configuración" />
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#">Contenido</a>
+    <a href="#">Asignaciones</a>
+    <a href="#">Foros</a>
+    <a href="#">Cuestionarios</a>
+    <a href="#">Progreso de la clase</a>
+    <a href="#">Valoraciones</a>
+    <a href="#">Evaluación
+      <img src="../../media/svg/down.svg" alt="Desplegar" title="Desplegar" />
+    </a>
+    <a href="#">Herramientas
+      <img src="../../media/svg/down.svg" alt="Desplegar" title="Desplegar" />
+    </a>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="page-wrapper">
+    <section>
+      <h1>Hojas de Vida de Estudiantes</h1>
+
+      <!-- BUSCADOR -->
+      <div class="search-row">
+        <div class="search-wrap">
+          <input type="text" placeholder="Buscar..." id="searchInput" oninput="filterCards()" />
+          <button><img class="search-img" src="../../media/svg/search.svg" alt="Buscador"></button>
+        </div>
+        <a class="search-options-link" href="#">Mostrar opciones de búsqueda</a>
+      </div>
+
+      <!-- GRILLA DE TARJETAS -->
+      <div class="cards-grid" id="cardsGrid">
+        <!-- Tarjetas de estudiantes autogeneradas por js -->
+      </div>
+      <br>
+      <div class="cards-grid">
+        <article class="student-card student-card--add">
+          <div class="add-icon-wrap">
+            <img src="../../media/svg/add.svg" alt="Agregar Estudiante" class="add-icon-img" />
+          </div>
+          <div class="student-name">Nuevo Estudiante</div>
+          <a href="#" class="btn-ver btn-agregar">Agregar</a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <button class="btn-listo">Listo</button>
+  </footer>
+
+</body>
+
+</html>

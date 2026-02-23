@@ -1,6 +1,12 @@
 /* ========================================
-   ESTILOS GENERALES
-   ======================================== */
+    IMPORTACIONES
+======================================== */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=widget_small");
+/* ========================================
+ESTILOS GENERALES
+======================================== */
 
 * {
     margin: 0;
@@ -13,7 +19,6 @@
     --body-color: #f2f8fd;
     --secondary-color: #3498db;
     --alternative-color: #e74c3c;
-    --text-color: #333333;
     --text-light: #666666;
     --bg-light: #f8f9fa;
     --white: #ffffff;
@@ -32,12 +37,47 @@
     --font-size-xs: 0.5rem;
     --font-size-sm: 1.1rem;
     --font-size-md: 1.5rem;
+
+    --white: #fff;
+    --blue: #003A6B;
+    --button-color: #0070C0;
+    --blue-mid: #2257b8;
+    --accent: #1565c0;
+    --card-bg: #ffffff;
+    --bg: #f4f6fb;
+    --text: #1a2540;
+    --muted: #6b7a99;
+    --border: #dde3f0;
+    --radius: 14px;
+    --shadow: 0 2px 18px rgba(33, 87, 184, .10);
+    /*COLORES AUTOMATICOS PARA LOS DEGRADADOS*/
+    --color1: #e3f0ff;
+    --color2: #b3d1ff;
+    --color3: #fce8ff;
+    --color4: #e0b3ff;
+    --color5: #b3ffd6;
+    --color6: #ffd180;
+    --color7: #ffb3b3;
+    --color8: #b3d1ff;
+    --color9: #e0b3ff;
+    --color10: #b3ffd6;
+    --color11: #ffd180;
+    --color12: #e8fff3;
+    --color13: #ffb3b3;
+    --color14: #fff3e0;
+    --color15: #ffeaea;
+    --color16: #e3f0ff;
+    --color17: #fce8ff;
+    --color18: #e8fff3;
+    --color19: #fff3e0;
+    --color20: #ffeaea;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
     background-color: var(--body-color);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
 }
-
