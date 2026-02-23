@@ -4,7 +4,7 @@ const listaEstudiantes = [
   { nombre: "Andrés Rivera",   rol: "Programacion web", iniciales: "AR", urlImagen : null,urlPortafolio : "https://afriverag.github.io/CV/", urlLinkedin:"",urlX:"",urlFacebook:""},
   { nombre: "Ana Rivera", rol: "Programacion web",iniciales: "AR", urlImagen : null,urlPortafolio : "https://anakarina15.github.io/HojadeVida.AnaKarinaRivera.io/", urlLinkedin:"",urlX:"",urlFacebook:""},
   { nombre: "Daniel Orozco", rol: "Programacion web",iniciales: "DO", urlImagen : null,urlPortafolio : "https://davizq02.github.io/PORTALHDV/pages/portafolio/portafolio.html", urlLinkedin:"",urlX:"",urlFacebook:""},
-  { nombre: "Juranis Botto",  rol: "Programacion web",iniciales: "JB", urlImagen : null,urlPortafolio : "https://davizq02.github.io/PORTALHDV/pages/portafolio/portafolio.html", urlLinkedin:"",urlX:"",urlFacebook:""},
+  { nombre: "Juranis Botto",  rol: "Programacion web",iniciales: "JB", urlImagen : null,urlPortafolio : "https://yuranisbottojimenez-hub.github.io/HojadevidaYuranis.io/", urlLinkedin:"",urlX:"",urlFacebook:""},
   { nombre: "Milder Blanco",  rol: "Programacion web",iniciales: "MB", urlImagen : null,urlPortafolio : "https://davizq02.github.io/PORTALHDV/pages/portafolio/portafolio.html", urlLinkedin:"",urlX:"",urlFacebook:""},
   { nombre: "Andrés Lara", rol: "Programacion web", iniciales: "AL", urlImagen : null,urlPortafolio : "https://davizq02.github.io/PORTALHDV/pages/portafolio/portafolio.html", urlLinkedin:"",urlX:"",urlFacebook:""},
   { nombre: "Santiago Torres",    rol: "Programacion web",iniciales: "ST", urlImagen : null,urlPortafolio : "https://davizq02.github.io/PORTALHDV/pages/portafolio/portafolio.html", urlLinkedin:"",urlX:"",urlFacebook:""},
