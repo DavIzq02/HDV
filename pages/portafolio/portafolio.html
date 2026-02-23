@@ -7,29 +7,54 @@
     <meta name="description" content="Hoja de vida profesional - David Izquierdo">
     <meta name="keyword" content="Hoja de vida profesional - David Izquierdo">
     <title>HDV | David Izquierdo</title>
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="media/img/icono.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style type="text/css">
+        @import url("../../css/header.css");
+        @import url("../../css/general.css");
+        @import url("../portafolio/style/header.css");
+        @import url("../portafolio/style/body.css");
+        @import url("../portafolio/style/footer.css");
+        @import url("../portafolio/style/responsive.css");
+    </style>
+    <link rel="icon" href="../../media/img/icono.png" type="image/png">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-content">
-            <div class="profile-photo">
-                <img src="media/img/yo.png" alt="Foto de perfil" class="photo">
+    <!-- Cabezado de pagina -->
+    <header>
+        <div class="header-left">
+            <img src="../../media/img/unimagLogo.png" class="logo mr-1" alt="Campus virtual UM">
+        </div>
+        <div class="course-title">PROGRAMACIÓN WEB</div>
+        <div class="header-right">
+            <img src="../../media/svg/grid.svg" alt="Grid Icon" class="header-icon" title="Vista de cuadrícula" />
+            <img src="../../media/svg/mail.svg" alt="Mail Icon" class="header-icon" title="Correo" />
+            <img src="../../media/svg/mensajes.svg" alt="Message Icon" class="header-icon" title="Mensajes" />
+            <img src="../../media/svg/notification.svg" alt="Notification Icon" class="header-icon"
+                title="Notificaciones" />
+
+            <div class="user-chip">
+                <div class="user-avatar">DI</div>
+                David Izquierdo
             </div>
-            <div class="header-info">
-                <h1 class="name">David Izquierdo Camargo</h1>
-                <h2 class="title">Estudiante de Ingeniería de Sistemas</h2>
-                <p class="subtitle">Desarrollador Web</p>
-            </div>
+            <img src="../../media/svg/ajustes.svg" alt="Settings Icon" class="header-icon" title="Configuración" />
         </div>
     </header>
+
+    <!-- Contenido principal -->
+             <div class="header">
+            <div class="header-content">
+                <div class="profile-photo">
+                    <img src="../../media/img/yo.png" alt="Foto de perfil" class="photo">
+                </div>
+                <div class="header-info">
+                    <h1 class="name">David Izquierdo Camargo</h1>
+                    <h2 class="title">Estudiante de Ingeniería de Sistemas</h2>
+                    <p class="subtitle">Desarrollador Web</p>
+                </div>
+            </div>
+        </div>
     <main class="container">
+
         <!-- Contenedor de la barra lateral izquierda -->
         <aside class="sidebar">
             <!-- Perfil Personal -->
@@ -87,7 +112,7 @@
 
 
             <!-- Habilidades -->
-             <details>
+            <details>
                 <summary class="section-title">
                     <i class="fas fa-code"></i> Habilidades
                 </summary>
@@ -145,7 +170,7 @@
                         </ul>
                     </div>
                 </section>
-             </details>
+            </details>
         </aside>
 
         <!-- Contenedor de la sección derecha -->
@@ -386,6 +411,7 @@
 
         </div>
     </main>
+
     <!-- Pie de página -->
     <footer class="footer">
         <p>
